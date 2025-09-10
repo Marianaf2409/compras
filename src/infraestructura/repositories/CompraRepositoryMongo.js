@@ -1,7 +1,6 @@
 // Importamos Mongoose para manejar MongoDB
 import mongoose from "mongoose";  
-// Importamos la entidad Compra del dominio (aunque no se usa directamente aquí)
-import Compra from "../../domain/models/Compra.js";  
+// Importamos la entidad Compra del dominio (aunque no se usa directamente aquí)  
 
 // Definimos el esquema de MongoDB para las compras
 const compraSchema = new mongoose.Schema({
