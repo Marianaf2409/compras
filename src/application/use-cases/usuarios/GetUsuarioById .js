@@ -1,6 +1,6 @@
 export default class GetUsuarioById {
   constructor(usuarioRepositoryMongo) {
-    this.uusuarioRepositoryMongo= usuarioRepositoryMongo;
+    this.usuarioRepositoryMongo= usuarioRepositoryMongo;
   }
 
   async execute(id) {

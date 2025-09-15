@@ -1,7 +1,7 @@
 // Importamos el repositorio de MongoDB para compras
 import CompraRepositoryMongo from "../repositories/CompraRepositoryMongo.js";  
 // Importamos la clase de caso de uso para crear compras
-// ⚠️ Atención: aquí estás importando CreateUser, debería ser CreateCompra si es para compras
+
 import CreateCompra from "../../application/use-cases/usuarios/CreateUsuario.js";  
 
 // Creamos una instancia del repositorio
