@@ -2,16 +2,21 @@
   "name": "api_clean_architecture",
   "version": "1.0.0",
   "description": "api clean architecture",
-  "keywords": ["api", "clean", "architecture"],
+  "keywords": [
+    "api",
+    "clean",
+    "architecture"
+  ],
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "license": "ISC",
   "author": "Mariana Figueroa",
-  "main": "app.js",
+  "main": "src/server.js",
   "type": "module",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",

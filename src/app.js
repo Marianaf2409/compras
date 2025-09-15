@@ -1,11 +1,14 @@
-import "dotenv/config.js";
-import connectDB  from "./config/database.js";
-import app from "./interfaces/server.js";
+import express from "express";
+import usuariosRoutes from "./infraestructura/routes/usuariosRoutes.js";
+import compraRoutes from "./infraestructura/routes/compraRoutes.js";
+import clientesRoutes from "./infraestructura/routes/clientesRoutes.js"; 
 
+const app = express();
+app.use(express.json());
 
-       // Si no hay variable de entorno, usa el puerto 3000
-const PORT = process.env.PORT || 3000;
+// Rutas
+app.use("/api/usuarios", usuariosRoutes);
+app.use("/api/compras", compraRoutes);
+app.use("/api/clientes", clientesRoutes); 
 
-connectDB().then(() => {
-app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}`));  // Mensaje indicando que el servidor está corriendo
-});
+export default app;
